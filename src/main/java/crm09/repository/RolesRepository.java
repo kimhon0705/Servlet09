@@ -27,6 +27,7 @@ public class RolesRepository {
 				Roles roles = new Roles();
 				roles.setId(resultSet.getInt("id"));
 				roles.setName(resultSet.getString("name"));
+				roles.setDescription(resultSet.getString("description"));
 				
 				listRole.add(roles);
 			}
